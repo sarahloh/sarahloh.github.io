@@ -1,10 +1,20 @@
 $(function() {
     $.getJSON("data/cc.json", function(data) {
-        var output = "<ul>";
+        var output = '<div class="row">';
         for(var i in data.companies) {
-            output += '<li><a href="' + data.companies[i].url + '">' + data.companies[i].name + '</a></li>';
+                output += '<div class="col-md-2"><a href="' + 
+                            data.companies[i].url + 
+                            '" class="thumbnail">' + 
+                            '<img src="img/blue.jpg">' +
+                            '<div class="caption"><p>' + data.companies[i].name + '<p></div>' +
+                            '</a></div>';
         };
-        output += "</ul>";
+        output += "</div>";
         $("#ccDiv").append(output);
     });
+
+    function makeRow(i,data) {
+
+    };
 });
+
