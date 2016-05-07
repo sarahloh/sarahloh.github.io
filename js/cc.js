@@ -10,7 +10,7 @@ $(function() {
                             '</div></a></div>';
         };
         output += "</div>";
-        $("#ccDiv").append(output);
+        $("#cc-div").append(output);
     });
 
     function makeRow(i,data) {
