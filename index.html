@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>S Loh Portfolio</title>
+    <title>SL Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/cc.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="cc-div"></div>
-    </div>
+    <div class="container"> <!-- main container -->
+
+        <!-- navbar to control slider
+        ================================================== -->
+        <div class="container">
+            <div class="col-md-6 col-md-offset-3">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">html5</a></li>
+                            <li><a href="#">d3.js</a></li>
+                            <li><a href="#">3d models</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- jQuery box slider
+        ================================================== -->
+        <div class="container">
+            <div class="row">
+                <!-- set container width with div -->
+                <div>
+                    <ul class="bxslider">
+                        <li><div id="cc-div"></div></li>
+                        <li><a href="#"><h3>slide2</h3></a></li>
+                        <li><a href="#"><h3>slide3</h3></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+    </div> <!-- end main container -->
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/cc.js"></script>
 </body>
 </html>

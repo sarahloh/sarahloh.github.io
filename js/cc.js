@@ -1,4 +1,10 @@
 $(function() {
+    var slider = $('.bxslider').bxSlider({
+        controls: false,
+        pager: false,
+        adaptiveHeight: true
+    });
+
     $.getJSON("data/cc.json", function(data) {
         var output = '<div class="row">';
         for(var i in data.companies) {
@@ -10,7 +16,8 @@ $(function() {
                             '</div></a></div>';
         };
         output += "</div>";
-        $("#cc-div").append(output);
+        $('#cc-div').append(output);
+         slider.reloadSlider();
     });
 
     function makeRow(i,data) {
