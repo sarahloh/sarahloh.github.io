@@ -5,3 +5,21 @@
 .caption {
     text-align: center;
 }
+
+.nav-pills > li > a {
+    color: black;
+}
+
+.nav-pills > li > a:hover {
+    background-color: silver;
+}
+
+.nav-pills > li.active > a:hover {
+    background-color: gray;
+}
+
+.nav-pills > li.active > a, nav-pills > li.active > a:focus {
+    color: white;
+    background-color: black; 
+}
+
