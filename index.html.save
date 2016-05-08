@@ -39,20 +39,20 @@
 
         <!-- nav to control slider
         ================================================== -->
-        <div id="container-slider-controls" class="container">
+        <div class="container">
             <div class="col-md-6 col-md-offset-3">
                 <ul class="nav nav-pills nav-justified">
-                    <li><button value="0" class="btn btn-default btn-slider active">html5</button></li>
-                    <li><button value="1" class="btn btn-default btn-slider">d3.js</button></li>
-                    <li><button value="2" class="btn btn-default btn-slider">webgl</button></li>
-                    <li><button value="3" class="btn btn-default btn-slider">3d models</button></li>
+                    <lictive"><button type="radio" class="btn btn-default">html5</button></li>
+                    <li role="presentation"><button type="" class="btn btn-default">d3.js</button></li>
+                    <li role="presentation"><button type="" class="btn btn-default">webgl</button></li>
+                    <li role="presentation"><button type="" class="btn btn-default">3d models</button></li>
                 </ul>
             </div>
         </div>
 
         <!-- jQuery box slider
         ================================================== -->
-        <div id="container-slider" class="container container-slider">
+        <div class="container">
             <div class="row">
                 <!-- set container width with div -->
                 <div>

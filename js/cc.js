@@ -1,8 +1,10 @@
 $(function() {
+
     var slider = $('.bxslider').bxSlider({
         controls: false,
         pager: false,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        speed: '1000'
     });
 
     $.getJSON("data/cc.json", function(data) {
@@ -17,11 +19,15 @@ $(function() {
         };
         output += "</div>";
         $('#cc-div').append(output);
-         slider.reloadSlider();
+        slider.reloadSlider();
     });
 
-    function makeRow(i,data) {
+    $('.btn-slider').click(function(){
+        $('.btn-slider').removeClass('active');
+        $(this).addClass('active');
+        console.log($(this).val());
+        slider.goToSlide($(this).val());
+    });
 
-    };
 });
 
