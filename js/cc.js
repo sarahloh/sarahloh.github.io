@@ -4,7 +4,10 @@ $(function() {
         controls: false,
         pager: false,
         adaptiveHeight: true,
-        speed: '1000'
+        speed: '1000',
+        onSlideAfter: function(){
+            $('.btn-slider').removeAttr('disabled');
+        } 
     });
 
     $.getJSON("data/cc.json", function(data) {
@@ -23,11 +26,13 @@ $(function() {
     });
 
     $('.btn-slider').click(function(){
+        $('.btn-slider').removeClass("rotate");
+        slider.goToSlide($(this).val());
         $('.btn-slider').removeClass('active');
         $(this).addClass('active');
-        console.log($(this).val());
-        slider.goToSlide($(this).val());
-    });
+        //$('.btn-slider').attr('disabled', 'disabled');
 
+        $('.btn-slider').toggleClass("rotate");
+    });
 });
 

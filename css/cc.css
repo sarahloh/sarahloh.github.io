@@ -6,24 +6,30 @@
     text-align: center;
 }
 
-.nav-pills > li > a {
+.btn-slider {
     color: black;
 }
 
-.nav-pills > li > button:hover {
-    background-color: silver;
-}
-
-.nav-pills > li > button.active:hover {
-    color: white;
-    background-color: black;
-}
-
-.nav-pills > li > button.active {
+.btn-slider.active, .btn-slider.active:hover {
     color: white;
     background-color: black; 
 }
 
 .container-slider {
     padding-top: 15px;
+}
+
+.rotate {
+    -webkit-animation: rotate 2s;
+    animation: rotate 2s;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotateX(0deg);}
+    to {-webkit-transform: rotateX(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(360deg);}
 }
