@@ -2,7 +2,7 @@
     text-decoration: none !important;
 }
 
-.caption {
+.caption, #row-slider-controls {
     text-align: center;
 }
 
@@ -15,7 +15,7 @@
     background-color: black; 
 }
 
-.container-slider {
+#row-slider {
     padding-top: 15px;
 }
 
