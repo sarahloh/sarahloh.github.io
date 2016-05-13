@@ -1,4 +1,4 @@
-.thumbnail {
+.thumbnail, .panel-heading > a {
     text-decoration: none !important;
 }
 
