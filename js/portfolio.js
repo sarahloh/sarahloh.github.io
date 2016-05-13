@@ -1,51 +1,37 @@
 $(function() {
 
     /*
-        Load slider
-    */
-    var slider = $('.bxslider').bxSlider({
-        controls: false,
-        pager: false,
-        adaptiveHeight: true,
-        speed: '1000',
-        onSlideAfter: function(){
-            $('.btn-slider').removeAttr('disabled');
-        } 
-    });
-    
-    /*
-        Creative coding slide
+        creative coding thumbnails
     */
     $.getJSON("data/cc.json", function(data) {
-        var output = '<div class="row">';
+        var output = "";
         for(var i in data.companies) {
+                if(i%6==0){
+                    console.log("A: " + i);
+                    output += '<div class="row">'
+                };
                 output += '<div class="col-md-2">' + 
                             '<a href="' + data.companies[i].url + '">' +
                             '<div class="thumbnail">' + 
                             '<img src="img/' + data.companies[i].name + '.png">' +
                             '<div class="caption"><p>' + data.companies[i].name + '</p></div>' +
                             '</div></a></div>';
+                if(i%6==5){
+                    console.log("B: " + i);
+                    output += '</div>'
+                };
         };
-        output += "</div>";
         $('#cc-div').append(output);
         slider.reloadSlider();
     });
 
     /*
-        Slider controls
+        d3.js
     */
-    $('.btn-slider').click(function(){
-        $('.btn-slider').removeClass("rotate");
-        slider.goToSlide($(this).val());
-        $('.btn-slider').removeClass('active');
-        $(this).addClass('active');
-        //$('.btn-slider').attr('disabled', 'disabled');
-
-        $('.btn-slider').toggleClass("rotate");
-    });
+    $('#d3js-div').append('<h4>d3.js</h4>');
 
     /*
-        Three.js slide
+        three.js
     */
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );

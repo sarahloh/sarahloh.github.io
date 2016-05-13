@@ -2,34 +2,6 @@
     text-decoration: none !important;
 }
 
-.caption, #row-slider-controls {
+.caption {
     text-align: center;
-}
-
-.btn-slider {
-    color: black;
-}
-
-.btn-slider.active, .btn-slider.active:hover {
-    color: white;
-    background-color: black; 
-}
-
-#row-slider {
-    padding-top: 15px;
-}
-
-.rotate {
-    -webkit-animation: rotate 2s;
-    animation: rotate 2s;
-}
-
-@-webkit-keyframes rotate {
-    from {-webkit-transform: rotateX(0deg);}
-    to {-webkit-transform: rotateX(360deg);}
-}
-
-@keyframes rotate {
-    from {transform: rotateX(0deg);}
-    to {transform: rotateX(360deg);}
 }
