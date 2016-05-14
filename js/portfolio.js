@@ -1,5 +1,4 @@
 $(function() {
-
     /*
         creative coding thumbnails
     */
@@ -7,22 +6,19 @@ $(function() {
         var output = "";
         for(var i in data.companies) {
                 if(i%6==0){
-                    console.log("A: " + i);
                     output += '<div class="row">'
                 };
                 output += '<div class="col-md-2">' + 
-                            '<a href="' + data.companies[i].url + '">' +
+                            '<a class="cc-item" href="' + data.companies[i].url + '">' +
                             '<div class="thumbnail">' + 
                             '<img src="img/' + data.companies[i].name + '.png">' +
                             '<div class="caption"><p>' + data.companies[i].name + '</p></div>' +
                             '</div></a></div>';
                 if(i%6==5){
-                    console.log("B: " + i);
                     output += '</div>'
                 };
         };
         $('#cc-div').append(output);
-        slider.reloadSlider();
     });
 
     /*
