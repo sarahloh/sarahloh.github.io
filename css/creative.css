@@ -41,6 +41,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: red;
 }
 .bg-primary {
   background-color: #F05F40;
@@ -413,4 +414,10 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+@media (min-width: 1200px) {
+  #cv {
+    height: 1080px;
+  }
 }
