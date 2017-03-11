@@ -8,10 +8,10 @@ $(function() {
                 if(i%6==0){
                     output += '<div class="row">'
                 };
-                output += '<div class="col-md-2">' + 
+                output += '<div class="col-md-2">' +
                             '<a class="cc-item" href="' + data.companies[i].url + '">' +
-                            '<div class="thumbnail">' + 
-                            '<img src="img/' + data.companies[i].name + '.png">' +
+                            '<div class="thumbnail">' +
+                            '<img src="img/html5-logos/' + data.companies[i].name + '.png">' +
                             '<div class="caption"><p>' + data.companies[i].name + '</p></div>' +
                             '</div></a></div>';
                 if(i%6==5){
@@ -34,20 +34,20 @@ $(function() {
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
     $('#threejs-div').append( renderer.domElement );
-                        
+
     var cSize = 3;
     var geometry = new THREE.BoxGeometry( cSize/2, cSize/2, cSize/2 );
     var material = new THREE.MeshBasicMaterial( { color: 0xcbff, wireframe: true } );
     var cube1 = new THREE.Mesh( geometry, material );
     var cube2 = new THREE.Mesh( geometry, material );
     var cube3 = new THREE.Mesh( geometry, material );
-                        
+
     scene.add( cube1 );
     scene.add( cube2 );
     scene.add( cube3 );
 
     camera.position.z = 4;
-                        
+
     function render() {
         setTimeout( function() {
            requestAnimationFrame( render );
@@ -61,4 +61,3 @@ $(function() {
     }
     render();
 });
-
