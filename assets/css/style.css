@@ -35,7 +35,7 @@
 }
 
 .ui-menu-color-home {
-    background-color: #e67e22;
+    background-color: #3498db;
 }
 
 .ui-menu-color-resume {
@@ -43,24 +43,12 @@
 }
 
 .ui-menu-color-contact {
-    background-color: #3498db;
-}
-
-.ui-menu-color-download {
-    background-color: #d9a81d;
-}
-
-
-.ui-menu-color-github {
     background-color: #1c4a6c;
 }
 
-.ui-menu-color-interests {
+.ui-menu-color-download {
     background-color: #e74c3c;
 }
-
-
-
 
 body {
     font-family: Roboto, sans-serif;
@@ -291,6 +279,24 @@ footer .cv-pdf i:hover {
     display: inline-block;
     position: relative;
     width: 60%;
+}
+
+/*--------------------------------------------Projects*/
+
+.caption h3 {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.caption .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.caption .btn-primary:hover {
+    background-color: #286090;
+    border-color: #2e6da4;
 }
 
 /*--------------------------------------------Skills*/
