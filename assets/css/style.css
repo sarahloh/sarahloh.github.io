@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-
 /*--------------------------------------------Colors*/
 
 .bg-color-name-title {
@@ -57,7 +56,6 @@ body {
     color: #555555;
 }
 
-
 /*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
@@ -81,7 +79,6 @@ h4 {
     display: inline-block;
 }
 
-
 .row-table {
     display: table;
 }
@@ -93,7 +90,6 @@ h4 {
     margin-top: 25px;
     margin-bottom: 40px;
 }
-
 
 /*--------------------------------------------Heading*/
 
@@ -154,7 +150,6 @@ header {
     height: 120px;
 }
 
-
 .menuitem a i {
     padding-top: 22px;
     display: block;
@@ -173,14 +168,12 @@ header {
     letter-spacing: 2px;
 }
 
-
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
-
 
 /*--------------------------------------------Footer*/
 
@@ -315,11 +308,9 @@ footer .cv-pdf i:hover {
     background-color: rgba(25, 25, 25, 0.2);
 }
 
-
 .progress-section {
     margin: 40px 20px;
 }
-
 
 /*--------------------------------------------Work History*/
 
@@ -378,7 +369,6 @@ footer .cv-pdf i:hover {
     margin-bottom: 20px;
 }
 
-
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
@@ -405,8 +395,8 @@ button[type="submit"] {
         padding: 0 30px 30px;
         float: none;
         display: table-cell;
+        vertical-align: top;
     }
-
     .center-form {
         padding-top: 30px;
         min-height: 240px;
