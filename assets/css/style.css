@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
+
 /*--------------------------------------------Colors*/
 
 .bg-color-name-title {
@@ -56,7 +57,7 @@ body {
     color: #555555;
 }
 
-/*--------------------------------------------Special Paddings/Margins/Text*/
+/*--------------------------------------------Special Display/Paddings/Margins/Text*/
 
 h1,
 h2,
@@ -79,8 +80,17 @@ h4 {
     display: inline-block;
 }
 
+/* Used for equal height .section-columns */
 .row-table {
     display: table;
+}
+
+/* Used for equal height project columns */
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
 }
 
 .history-heading,
@@ -390,13 +400,14 @@ button[type="submit"] {
 
 /*--------------------------------------------Media Queries*/
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
     .section-column {
         padding: 0 30px 30px;
         float: none;
         display: table-cell;
         vertical-align: top;
     }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
