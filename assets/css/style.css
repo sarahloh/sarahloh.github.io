@@ -376,24 +376,44 @@ footer .cv-pdf i:hover {
 
 /*--------------------------------------------Contact*/
 
-.contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+.contact {
+    height: 300px;
+    padding-top: 75px;
 }
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
+.contact a:hover {
+    text-decoration: none;
 }
 
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #e84610;
+.contact i {
+    width: 150px;
+    height: 150px;
+    padding: 50px 0;
+    border-radius: 50%;
+    font-size: 45px;
+    line-height: 36px;
+    text-align: center;
     color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.contact i:hover {
+    background: black;
+}
+
+.contact span {
+    display: block;
+    padding-top: 10px;
+    color: #8f8f8f;
+    font-size: 16px;
+}
+
+.contact span:hover {
+    color: black;
 }
 
 /*--------------------------------------------Interests*/
