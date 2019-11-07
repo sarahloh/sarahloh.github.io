@@ -57,7 +57,13 @@ body {
     color: #555555;
 }
 
-/*--------------------------------------------Special Display/Paddings/Margins/Text*/
+h5.three-reasons-heading {
+    color: #3498db;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -98,11 +104,39 @@ h4 {
 }
 
 .history-heading,
-.section-heading {
+.section-heading,
+.portfolio-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
+}
+
+.history-heading,
+.section-heading {
     margin-top: 25px;
     margin-bottom: 40px;
+}
+
+.portfolio-heading {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-heading a {
+    margin-left: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-5 {
+    margin-top: 2.5rem;
+}
+
+.table > tbody > tr > td {
+    padding: 2px;
 }
 
 /*--------------------------------------------Heading*/
@@ -303,6 +337,24 @@ footer .cv-pdf i:hover {
     border-color: #2e6da4;
 }
 
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 34%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-dialog {
+    width: 90%;
+}
 /*--------------------------------------------Skills*/
 
 .progress {
