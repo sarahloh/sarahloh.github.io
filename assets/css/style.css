@@ -3,7 +3,7 @@
 /*--------------------------------------------Colors*/
 
 .bg-color-name-title {
-    background-color: #676767;
+    background-color: #212121;
 }
 
 .bg-color-three-reasons {
@@ -137,6 +137,10 @@ h4 {
 
 .table > tbody > tr > td {
     padding: 2px;
+}
+
+.error-jumbo {
+    margin-top: 50px;
 }
 
 /*--------------------------------------------Heading*/
@@ -355,6 +359,7 @@ footer .cv-pdf i:hover {
 .modal-dialog {
     width: 90%;
 }
+
 /*--------------------------------------------Skills*/
 
 .progress {
