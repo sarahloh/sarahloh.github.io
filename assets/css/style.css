@@ -135,7 +135,7 @@ h4 {
     margin-top: 2.5rem;
 }
 
-.table > tbody > tr > td {
+.table>tbody>tr>td {
     padding: 2px;
 }
 
@@ -341,13 +341,6 @@ footer .cv-pdf i:hover {
     border-color: #2e6da4;
 }
 
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 34%;
-    height: 0;
-}
-
 .iframe-container iframe {
     position: absolute;
     top: 0;
@@ -358,6 +351,16 @@ footer .cv-pdf i:hover {
 
 .modal-dialog {
     width: 90%;
+}
+
+/*--------------------------------------------Video*/
+
+#cle .row {
+    min-height: 315px;
+}
+
+#cle .video-item {
+    min-height: 315px
 }
 
 /*--------------------------------------------Skills*/
